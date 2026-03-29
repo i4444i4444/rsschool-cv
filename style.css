@@ -1,18 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
+    line-height: 1.6;
+    background-color:rgb(223, 223, 208);
+    color:rgb(142, 139, 125);
     padding: 20px;
-    background-color: #f5f5f5;
-    color: #333;
 }
 
-h1 {
-    color: #0066cc;
-    text-align: center;
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background:rgb(249, 255, 240);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
 
-p {
+header {
     text-align: center;
-    font-size: 18px;
+    padding: 20px;
+    background: linear-gradient(135deg, #fffbd7 0%, #f6df62 100%);
+    color:#615434;
+}
+
+.photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid white;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+nav {
+    background: #fffbd7;
+}
+
+nav ul {
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav ul li a { 
+    color: #e1cc56;
+    text-decoration:none;
+    font-weight:bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color:#ddb527;
+}
+
+main {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 30px;
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    color: #ded08e;
+    border-bottom: 2px solid #e5dea9;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    margin: 15px 0 10px;
+    color: #f6e98d;
+}
+
+ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+ul li {
+    margin: 8px 0;
+}
+
+a {
+    color: #f6e98d;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fffbd7;
+    color:#615434;
+    border-top: 1px solid #ddd;
+}
+
+footer a {
+    color:#615434;
+    text-decoration: none;
+}
+
+footer img {
+    vertical-align: middle;
+    margin-top: 10px;
 }
